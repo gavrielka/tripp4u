@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .header {
+            background-color: white;
+            color: white;
+            padding: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header img {
+            max-height: 50px;
+            margin-right: 1em;
+        }
+        .header h1 {
+            flex-grow: 1;
+            margin: 0;
+            text-align: left;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #1113B7;
+            padding: 0.5em 0;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+        .nav a:hover {
+            background-color: #5757D9;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 2em;
+        }
+        .widget {
+            margin-bottom: 2em;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav a {
+                padding: 1em;
+                width: 100%;
+                text-align: center;
+            }
+            .menu-icon {
+                display: block;
+                color: blue;
+            }
+        }
+
+    </style>
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById('nav');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="/274201112_476943633881740_177450874162237832_n.jpg" alt="Logo">
+        <h1 style="color: #1113B7; text-align: center; margin: 0;">Travel Booking</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+    </div>
+    <div class="nav" id="nav">
+        <a href="/index.html">Home</a>
+        <a href="/hotels.html">Hotels</a>
+        <a href="/Rentacar.html">Rent a Car</a>
+        <a href="/tours.html">Tours</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="content">
+        <div class="widget">
+            <script async src="https://c150.travelpayouts.com/content?trs=47738&shmarker=165081&locale=en&tours=12&powered_by=true&promo_id=4489" charset="utf-8"></script>
+        </div>
+        <div class="widget">
+            <script async src="https://tp.media/content?currency=usd&trs=157349&shmarker=165081&lat=51.51&lng=0.06&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=en&origin=LON&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%233FABDB&secondary=%23FFFFFF&light=%23FFFFFF&width=1500&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
+        </div>
+        
